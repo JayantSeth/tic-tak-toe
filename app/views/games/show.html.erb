@@ -1,0 +1,9 @@
+<h1> This is Games show page </h1> 
+
+<%= @game.id %>
+<%= Player.find_by_id(session[:player]).name %>
+<% if session[:new_game] %>
+  Waiting for player 2  
+<% else %> 
+  player 2 
+<% end %>
